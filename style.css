@@ -1,0 +1,315 @@
+html{
+    background-color: #bcbcbd ;
+    scroll-behavior: smooth;
+}
+h3{
+    font-size: 22px;
+}
+body{
+    margin-top: 50px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #bcbcbd ;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    transition: 0.8s;
+    border-radius: 50%;
+    background-color:rgba(71, 71, 71, 0.562);
+}
+
+
+
+
+
+
+
+
+.left
+{
+    display: flex;
+    position: relative;
+}
+.right{
+    display: flex;
+}
+.uptext{
+    font-family: 'Poiret One', cursive;
+    margin-left:17px;
+    margin-right: 10px;
+    
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.uptext h3{
+    padding-bottom:5px;
+}
+.cm:hover {
+transform: scale(1.1);
+transition: 0.2s;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.intro{
+    
+    background-color:  #b5b5b6;
+    border-radius: 10px;
+    font-family: 'Poiret One', cursive;
+    padding: 5%;
+    padding-bottom: 10%;
+    margin: 5%;
+    margin-top: 100px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 50px 10px rgb(117, 117, 117);
+
+}
+.imiddle>img{
+    box-shadow: 10px 10px 10px 2px rgb(70, 69, 69);
+}
+.ileft{
+    width: 50%;
+    margin-top: 6%;
+    
+}
+.iright{
+    margin-top: 10%;
+    margin-left: 5%;
+    
+}
+.sicon:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.aboutme{
+    
+    background-color:  #b5b5b6;
+    border-radius: 10px;
+    font-family: 'Poiret One', cursive;
+    padding: 5%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    margin: 5%;
+    margin-top: 13%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 50px 10px rgb(117, 117, 117);
+}
+.resume{
+
+    background-color:  #b5b5b6;
+    border-radius: 10px;
+    font-family: 'Poiret One', cursive;
+    padding: 5%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    margin: 5%;
+    margin-top: 13%;
+    margin-left: 3%;
+    
+    box-shadow: 10px 10px 50px 10px rgb(117, 117, 117);
+}
+.cv{
+    width: 100%;
+    height: 77vh;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.projects{
+
+    background-color:  #b5b5b6;
+    border-radius: 10px;
+    
+    font-family: 'Poiret One', cursive;
+    padding: 5%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    margin: 5%;
+    margin-top: 13%;
+    margin-left: 3%;
+    box-shadow: 10px 10px 50px 10px rgb(117, 117, 117);
+}
+.tiles{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    
+}
+
+.ptile{
+    width: 300px;
+    height: 400px;
+    font-size: 18px;
+    margin:2%;
+    /* background-color: bisque; */
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    perspective: 1000px;
+    background-color: transparent;
+    
+    
+    
+}
+.p1 , .p2 , .p3{
+    
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 10px 10px 10px 0px gray;
+}
+.tile-front{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    font-size: larger;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.tile-back{
+    width: 100%;
+    height: 93%;
+    padding-top: 10%;
+    background-color: rgb(137, 170, 170);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.tile-front>img{
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    
+}
+.ptile:hover .p1{
+    transform: rotateY(180deg);
+}
+.ptile:hover .p2{
+    transform: rotateY(180deg);
+}
+.ptile:hover .p3{
+    transform: rotateY(180deg);
+}
+
+.contactme{
+
+    background-color:  #b5b5b6;
+    
+    
+    border-radius: 10px;
+    font-family: 'Poiret One', cursive;
+    padding: 5%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    margin: 5%;
+    margin-top: 13%;
+    margin-left: 3%;
+    box-shadow: 10px 10px 50px 10px rgb(117, 117, 117);
+  
+}
+
+.send{
+    height: 450px;
+    width: auto;
+    border-radius:5px;
+    padding-top: 10px;
+    max-width: 900px;
+    
+    background-color: rgba(36, 36, 36, 0.87);
+   
+}
+.em{
+    display: flex;
+    justify-content: space-around;
+}
+.em>input{
+    width: 50%;
+    margin: 15px;
+    height: 40px;
+}
+
+.subject>input{
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: 40px;
+}
+.msg>input{
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: 100px;
+}
+input{
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: #bcbcbd solid 1px;
+    color: rgb(206, 201, 201);
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.sendme>button{
+    width: 20%;
+    margin: 15px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(216, 215, 208);
+    border:none;
+    background-color: rgb(204, 81, 36);
+    
+}
+.sendme>button:active{
+    transform: translate3d(1px ,1px , 0);
+}
+ 
